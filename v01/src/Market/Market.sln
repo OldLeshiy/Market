@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{11D7A1A7-E43C-4160-937F-B107C312ACD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{6D574E78-944B-4131-96ED-0E7564D9F7FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Tests", "DataAccess.Tests\DataAccess.Tests.csproj", "{2FAF3A03-549B-4987-BCDE-B5C9F0468B90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Interfaces", "DataAccess.Interfaces\DataAccess.Interfaces.csproj", "{25307827-A99A-4122-8569-278441E7B018}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{E154A2A5-2A45-4F6B-8F46-242503B20721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic.Tests", "BusinessLogicTests\BusinessLogic.Tests.csproj", "{D596F6FD-FEB9-4674-979F-5E4FA4989A11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServices", "WcfServices\WcfServices.csproj", "{D40AEDD1-B5BA-498A-AADD-7CB60D08EEAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terminal", "Terminal\Terminal.csproj", "{E86AE371-A0AE-4EED-8AF1-200BE41D81DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServicesProxy", "WcfServicesProxy\WcfServicesProxy.csproj", "{59F4F41E-87ED-4718-BC47-3D9670803F9C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D40AEDD1-B5BA-498A-AADD-7CB60D08EEAD} = {D40AEDD1-B5BA-498A-AADD-7CB60D08EEAD}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11D7A1A7-E43C-4160-937F-B107C312ACD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11D7A1A7-E43C-4160-937F-B107C312ACD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11D7A1A7-E43C-4160-937F-B107C312ACD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11D7A1A7-E43C-4160-937F-B107C312ACD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D574E78-944B-4131-96ED-0E7564D9F7FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D574E78-944B-4131-96ED-0E7564D9F7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D574E78-944B-4131-96ED-0E7564D9F7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D574E78-944B-4131-96ED-0E7564D9F7FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FAF3A03-549B-4987-BCDE-B5C9F0468B90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FAF3A03-549B-4987-BCDE-B5C9F0468B90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FAF3A03-549B-4987-BCDE-B5C9F0468B90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FAF3A03-549B-4987-BCDE-B5C9F0468B90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25307827-A99A-4122-8569-278441E7B018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25307827-A99A-4122-8569-278441E7B018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25307827-A99A-4122-8569-278441E7B018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25307827-A99A-4122-8569-278441E7B018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E154A2A5-2A45-4F6B-8F46-242503B20721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E154A2A5-2A45-4F6B-8F46-242503B20721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E154A2A5-2A45-4F6B-8F46-242503B20721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E154A2A5-2A45-4F6B-8F46-242503B20721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D596F6FD-FEB9-4674-979F-5E4FA4989A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D596F6FD-FEB9-4674-979F-5E4FA4989A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D596F6FD-FEB9-4674-979F-5E4FA4989A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D596F6FD-FEB9-4674-979F-5E4FA4989A11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D40AEDD1-B5BA-498A-AADD-7CB60D08EEAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D40AEDD1-B5BA-498A-AADD-7CB60D08EEAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D40AEDD1-B5BA-498A-AADD-7CB60D08EEAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D40AEDD1-B5BA-498A-AADD-7CB60D08EEAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E86AE371-A0AE-4EED-8AF1-200BE41D81DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E86AE371-A0AE-4EED-8AF1-200BE41D81DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E86AE371-A0AE-4EED-8AF1-200BE41D81DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E86AE371-A0AE-4EED-8AF1-200BE41D81DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59F4F41E-87ED-4718-BC47-3D9670803F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59F4F41E-87ED-4718-BC47-3D9670803F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59F4F41E-87ED-4718-BC47-3D9670803F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59F4F41E-87ED-4718-BC47-3D9670803F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dobrovidov.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Model\\Model.csproj
+		SccProjectName1 = Model
+		SccLocalPath1 = Model
+		SccProjectUniqueName2 = DataAccess\\DataAccess.csproj
+		SccProjectName2 = DataAccess
+		SccLocalPath2 = DataAccess
+		SccProjectUniqueName3 = DataAccess.Tests\\DataAccess.Tests.csproj
+		SccProjectName3 = DataAccess.Tests
+		SccLocalPath3 = DataAccess.Tests
+		SccProjectUniqueName4 = DataAccess.Interfaces\\DataAccess.Interfaces.csproj
+		SccProjectName4 = DataAccess.Interfaces
+		SccLocalPath4 = DataAccess.Interfaces
+		SccProjectUniqueName5 = BusinessLogic\\BusinessLogic.csproj
+		SccProjectName5 = BusinessLogic
+		SccLocalPath5 = BusinessLogic
+		SccProjectUniqueName6 = WcfServices\\WcfServices.csproj
+		SccProjectName6 = WcfServices
+		SccLocalPath6 = WcfServices
+		SccProjectUniqueName7 = Terminal\\Terminal.csproj
+		SccProjectName7 = Terminal
+		SccLocalPath7 = Terminal
+		SccProjectUniqueName8 = WcfServicesProxy\\WcfServicesProxy.csproj
+		SccProjectName8 = WcfServicesProxy
+		SccLocalPath8 = WcfServicesProxy
+		SccProjectUniqueName9 = BusinessLogicTests\\BusinessLogic.Tests.csproj
+		SccProjectName9 = BusinessLogicTests
+		SccLocalPath9 = BusinessLogicTests
+	EndGlobalSection
+EndGlobal

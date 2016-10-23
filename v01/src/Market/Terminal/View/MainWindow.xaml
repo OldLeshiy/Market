@@ -1,0 +1,21 @@
+﻿<Window x:Class="Terminal.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:view="clr-namespace:Terminal.View"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:viewModel="clr-namespace:Terminal.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        d:DataContext="{d:DesignInstance viewModel:MainViewModel}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <view:BarListView DataContext="{Binding BarListViewModel}" />
+    </Grid>
+</Window>
